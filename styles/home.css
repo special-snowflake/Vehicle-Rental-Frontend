@@ -61,7 +61,7 @@ body {
 }
 .poster {
   min-height: 87vh;
-  background-image: url('../assets/images/karsten-winegeart-0QTcK1JcteQ-unsplash-c.webp');
+  background-image: url('../assets/images/resi-kling-jkmQz2eVjuQ-unsplash-c.webp');
   background-position: center;
   background-size: cover;
 }
@@ -72,7 +72,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .tagline {
-  color: #202336;
+  color: white;
   font-family: 'Playfair Display', serif;
   font-weight: bolder;
   font-size: 2.5em;
@@ -80,7 +80,7 @@ body {
   line-height: 110%;
 }
 .sub-tagline {
-  color: #202336;
+  color: white;
   font-weight: bolder;
 }
 .sub-tagline:after {
@@ -88,7 +88,7 @@ body {
   display: block;
   margin-top: 10px;
   width: 5%;
-  border-top: 2px solid #202336;
+  border-top: 2px solid white;
   margin-bottom: 4vh;
 }
 input,
@@ -274,6 +274,9 @@ a:hover {
   font-size: 14px;
   padding: 6vh;
   padding-top: 3vh;
+}
+.foot p{
+  max-width: 500px;
 }
 .footer-title {
   font-weight: bolder;
@@ -486,5 +489,5 @@ a:hover {
 @media (max-width: 576px) {
   .form-check-inline {
     display: block;
-}
+  }
 }
