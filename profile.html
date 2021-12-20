@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bd201f1465.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Profile - Vehicle Rental</title>
+    <style>
+      .nav-user-picture {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        display: block;
+        background-image: url('./assets/images/michael-dam-mEZ3PoFGs_k-unsplash-nav.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container header">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="home.html">
+          <img
+            src="./assets/icons/black-yellow.png"
+            alt="Bootstrap"
+            width="25"
+            height="25"
+            class="d-inline-block align-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+          <ul class="navbar-nav ms-auto text-center">
+            <li>
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Vehicle Type</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">History</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li text-center>
+              <div class="col-12 nav-mail">
+                <a href="#">
+                  <div
+                    style="
+                      max-width: 40px;
+                      max-height: 40px;
+                      padding: 0;
+                      position: relative;
+                      margin: auto !important;
+                    "
+                  >
+                    <img
+                      src="./assets/icons/email.png"
+                      alt="Email"
+                      class="nav-item-mail"
+                    />
+                    <figcaption>1</figcaption>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="col-12 text-center ms-auto">
+                  <i class="nav-user-picture" alt="Profile"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <div class=".d-none .d-sm-block col-sm-1"></div>
+      <div class="col-12 col-sm-10">
+        <div class="col-12 col-sm-10 col-md-10"></div>
+        <div class="row content">
+          <div
+            class="col-12 row-header"
+            style="font-family: 'Nunito', sans-serif; font-weight: 900"
+          >
+            Profile
+          </div>
+          <div class="col-12 profile-info">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6 text-center">
+                <div class="profile-image-wrapper">
+                  <img
+                    src="./assets/images/michael-dam-mEZ3PoFGs_k-unsplash-profile.webp"
+                    alt=""
+                    class="profile-image"
+                  />
+                  <figcaption>
+                    <a href="#">
+                      <img
+                        src="./assets/icons/pencil.svg"
+                        width="17px"
+                        height="17px"
+                        alt="Edit Photo"
+                      />
+                    </a>
+                  </figcaption>
+                </div>
+                <h3>Samantha Doe</h3>
+                <div class="user-info">
+                  <p>
+                    samanthadoe@mail.com <br />
+                    +62833467823<br />
+                    Has been active since 2013
+                  </p>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="male"
+                    value="Male"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Male</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="femlae"
+                    value="Female"
+                    checked
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Female</label
+                  >
+                </div>
+              </div>
+              <div class="col-12 text-left profile-contacts">
+                <div class="contact-header col-12 text-left">Contacts</div>
+                <div class="col-12">
+                  <label>Email Address:</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    value="zulaikha17@gmail.com"
+                  />
+                </div>
+                <div class="col-12">
+                  <label>Address:</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    value="Iskandar Street no. 67 Block A Near Bus Stop"
+                  />
+                </div>
+                <div class="col-12">
+                  <label>Mobile Number:</label>
+                  <input type="text" name="" id="" value="(+62)813456782" />
+                </div>
+                <div class="contact-header col-12 text-left">Identity</div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <label>Display Name:</label>
+                      <input type="text" name="" id="" value="zulaikha" />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label>DD/MM/YYYY:</label>
+                      <input type="date" name="" id="" value="2003-09-03" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col 12">
+                  <div class="row">
+                    <div class="col-12 col-sm-4">
+                      <a href="#" class="btn btn-gold">Save Change</a>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <a href="#" class="btn btn-black">Edit Password</a>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <a href="#" class="btn btn-grey">Cancel</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=".d-none .d-sm-block col-sm-1"></div>
+    </div>
+
+    <div class="row foot">
+      <div class="col-sm-5 col-6">
+        <img
+          src="./assets/icons/black-yellow.png"
+          alt="Icon"
+          width="25px"
+          height="25px"
+        />
+        <br />
+        <br />
+        <p>
+          Plan and book your perfect trip with expert advice, travel tips for
+          vehicle information from us
+        </p>
+        <p>©2020 Vehicle Rental Center. All rights reserved</p>
+      </div>
+      <div class="col-sm-2 col-6">
+        <div class="footer-title">Destinations</div>
+        <ul>
+          <li>Bali</li>
+          <li>Yogyakarta</li>
+          <li>Jakarta</li>
+          <li>Kalimantan</li>
+          <li>Malang</li>
+        </ul>
+      </div>
+      <div class="col-sm-2 col-6">
+        <div class="footer-title">Vehicle</div>
+        <ul>
+          <li>Bike</li>
+          <li>Cars</li>
+          <li>Motorbike</li>
+          <li>Return Times</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-6">
+        <div class="footer-title">Interest</div>
+        <ul>
+          <li>Adventure Travel</li>
+          <li>Art and Culture</li>
+          <li>Wildlife and Nature</li>
+          <li>Family Holiday</li>
+          <li>Culinary Trip</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row footer-info">
+      <div class="wrapper text-center col-11 mx-auto">
+        <div class="col-12 col-sm-6 col-md-4 text-center mx-auto">
+          <div class="col-12 social-icons">
+            <a href="#">
+              <img
+                src="./assets/icons/Twitter.png"
+                alt="twitter"
+                width="20px"
+                height="auto"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/icons/Facebook.png"
+                alt="facebook"
+                height="20px"
+                width="auto"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/icons/Instagram.png"
+                alt="instagram"
+                width="20px"
+                height="auto"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/icons/LinkedIn.png"
+                alt="linkedin"
+                width="20px"
+                height="auto"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/icons/Youtube.png"
+                alt="youtube"
+                width="20px"
+                height="auto"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
