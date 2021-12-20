@@ -20,6 +20,28 @@
       src="https://kit.fontawesome.com/bd201f1465.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .more {
+        color: #fb8f1d;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+      }
+      @media (max-width: 360px) {
+        .vehicle-images img {
+          display: block;
+          object-fit: cover;
+          width: 35vw;
+          height: 55vw;
+          border-radius: 8px;
+        }
+        .vehicle-images figcaption {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          max-width: 50px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -124,8 +146,27 @@
         align-items-center
         justify-content-between
       "
+      style="
+        background-image: url(./assets/icons/circle.svg);
+        background-position: center bottom;
+        background-size: 1rem 1rem;
+        background-repeat: no-repeat;
+      "
     >
-      <div class="col-sm-12 row-header">Popular in town</div>
+      <div class="col-sm-9 row-header">Popular in town</div>
+      <div class="col-sm-3 text-right align-middle more">
+        View All
+        <img
+          src="./assets/icons/forward.svg"
+          width="14px"
+          height="14px"
+          alt="View All"
+          style="
+            filter: invert(70%) sepia(32%) saturate(5220%) hue-rotate(347deg)
+              brightness(102%) contrast(97%);
+          "
+        />
+      </div>
       <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
         <div class="vehicle-content">
           <div class="vehicle-images">
@@ -191,7 +232,15 @@
         </div>
       </div>
     </div>
-    <div class="row content">
+    <div
+      class="row content"
+      style="
+        background-image: url(./assets/icons/circle.svg);
+        background-position: 1rem center;
+        background-size: 1rem 1rem;
+        background-repeat: no-repeat;
+      "
+    >
       <div class="col-12 row-header">Testimonials</div>
       <div class="row testimony">
         <div class="col-12 col-sm-6">
@@ -224,10 +273,20 @@
             <figcaption>
               <div>
                 <a href="#">
-                    <img src="./assets/icons/previous.svg" class="non-active" width="25px" height="25px" alt="">
-                    <img src="./assets/icons/next.svg" class="active" width="25px" height="25px" alt="">
-                  <!-- <i class="bi bi-arrow-left-circle non-active"></i>
-                  <i class="bi bi-arrow-right-circle active"></i> -->
+                  <img
+                    src="./assets/icons/previous.svg"
+                    class="non-active"
+                    width="25px"
+                    height="25px"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/icons/next.svg"
+                    class="active"
+                    width="25px"
+                    height="25px"
+                    alt=""
+                  />
                 </a>
               </div>
             </figcaption>
