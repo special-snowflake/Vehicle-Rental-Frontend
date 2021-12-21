@@ -61,6 +61,20 @@ body {
   margin-left: -7px;
 }
 
+
+      .nav-user-picture {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        display: block;
+        background-image: url('../assets/images/michael-dam-mEZ3PoFGs_k-unsplash-nav.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center -7px;
+        border-radius: 50%;
+        margin: auto;
+      }
+
 input,
 select {
   width: 100%;
