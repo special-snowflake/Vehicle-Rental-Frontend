@@ -14,7 +14,7 @@ body {
 .canvas {
   width: 100vw;
   max-width: 100%;
-  background-image: url('../assets/images/iqx-azmi-jn01MSrsUpE-unsplash-c.jpg');
+  background-image: url('../assets/images/iqx-azmi-jn01MSrsUpE-unsplash-c.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center -20vh;
@@ -240,7 +240,7 @@ ul li a {
   .canvas {
     width: 200vw;
     max-width: 100%;
-    background-image: url('../assets/images/iqx-azmi-jn01MSrsUpE-unsplash-c.jpg');
+    background-image: url('../assets/images/iqx-azmi-jn01MSrsUpE-unsplash-cmobile.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
