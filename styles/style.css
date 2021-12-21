@@ -186,7 +186,7 @@ ul li a {
   border-top: 1px solid #c4c4c4;
   text-align: center;
   left: 2.5%;
-  min-height: 8vh;
+  min-height: 70px;
 }
 
 .fa {
@@ -198,31 +198,31 @@ ul li a {
   margin: 5px 2px;
 }
 .fa-twitter {
-  background: url('../assets/icons/Twitter.png');
+  background: url('../assets/icons/twitter.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 20px auto;
 }
 .fa-facebook {
-  background: url('../assets/icons/Facebook.png');
+  background: url('../assets/icons/facebook.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: auto 20px;
 }
 .fa-instagram {
-  background: url('../assets/icons/Instagram.png');
+  background: url('../assets/icons/instagram.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 20px auto;
 }
 .fa-linkedin {
-  background: url('../assets/icons/LinkedIn.png');
+  background: url('../assets/icons/linkedin.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 20px auto;
 }
 .fa-youtube {
-  background: url('../assets/icons/Youtube.png');
+  background: url('../assets/icons/youtube.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 20px auto;
