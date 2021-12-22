@@ -259,6 +259,7 @@ ul li a {
   .right {
     min-width: 80%;
     height: 100vh;
+    text-align: center;
   }
   .content-first .middle{
     width: 0;

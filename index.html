@@ -30,7 +30,7 @@
         background-size: cover;
       }
       .poster .layer {
-        padding: 6vh;
+        padding: 5%;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
@@ -39,7 +39,7 @@
         color: white;
         font-family: 'Playfair Display', serif;
         font-weight: bolder;
-        font-size: 2.5em;
+        font-size: 7vh;
         margin-bottom: 2vh;
         line-height: 110%;
       }
@@ -55,46 +55,6 @@
         border-top: 2px solid white;
         margin-bottom: 4vh;
       }
-      .testimony {
-        margin-top: 3vh;
-      }
-      .testimony .user {
-        font-weight: bolder;
-        margin-top: 20px;
-      }
-      .testimony-images {
-        position: relative;
-        width: 100%;
-      }
-      .testimony-images .user-image {
-        display: block;
-        object-fit: cover;
-        width: 180px;
-        height: 250px;
-        border-radius: 8px;
-      }
-      .testimony-images figcaption {
-        padding: 3px;
-        text-align: center;
-        width: 4rem;
-        height: 35px;
-        border-top-left-radius: 8px;
-        background-color: white;
-        position: absolute;
-        margin-top: -34px;
-        margin-left: 7.3rem;
-      }
-      .border-plus {
-        position: absolute;
-        margin-top: -10px;
-        margin-left: -10px;
-      }
-      .border-circle {
-        position: absolute;
-        margin-top: -260px;
-        margin-left: 165px;
-        z-index: -1;
-      }
       .more {
         color: #fb8f1d;
         font-family: 'Nunito', sans-serif;
@@ -109,12 +69,14 @@
       }
       .vehicle-images {
         position: relative;
+        width: 20vw;
+        height: 27vw;
       }
       .vehicle-images img {
         display: block;
         object-fit: cover;
-        width: 130px;
-        height: 175px;
+        width: 100%;
+        height: 100%;
         border-radius: 8px;
       }
       .vehicle-images figcaption {
@@ -124,11 +86,16 @@
         background: white;
         color: black;
         position: absolute;
-        min-width: 60px;
-        height: 40px;
-        margin-top: -39px;
+        max-width: 60%;
+        min-width: 40%;
+        min-height: 40px;
+        bottom: 0;
+        left: 0;
         text-align: left;
-        font-size: 12px;
+        font-size: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
       .vehicle-images figcaption a {
         color: inherit;
@@ -141,7 +108,6 @@
       .fig-subtitle {
         color: gray;
       }
-
       .ico-star {
         padding-left: 10px;
         padding-right: 10px;
@@ -151,26 +117,153 @@
         height: 15px;
         background-repeat: no-repeat;
       }
-      @media (max-width: 360px) {
+
+      .testimony {
+        margin-top: 3vh;
+      }
+      .testimony .user {
+        font-weight: bolder;
+        margin-top: 20px;
+      }
+      .testimony-images {
+        position: relative;
+        margin: auto;
+        width: 18vw;
+        height: 25vw;
+      }
+      .testimony-images .user-image {
+        margin: auto;
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
+      .testimony-images figcaption {
+        position: relative;
+        padding: 3px;
+        width: 100%;
+        border-top-left-radius: 8px;
+        bottom: 0;
+        right: 3vw;
+      }
+      .wrapper-testimony-btn {
+        position: absolute;
+        right: -3.4vw;
+        bottom: 0;
+        min-width: 6vw;
+        height: auto;
+        padding: 0.5vw;
+        background-color: white;
+        border-top-left-radius: 8px;
+      }
+
+      .next-previous {
+        width: 2.5vw;
+        height: 2.5vw;
+      }
+
+      .border-plus {
+        position: absolute;
+        width: 2vw;
+        height: 2vw;
+        left: -1vw;
+        bottom: -1vw;
+        z-index: 1;
+      }
+      .border-circle {
+        position: absolute;
+        width: 2.5vw;
+        height: 2.5vw;
+        top: -1vw;
+        right: -1vw;
+        z-index: -1;
+      }
+      .foot {
+        font-size: 1rem;
+      }
+      @media (max-width: 767px) {
+        .testimony-images {
+          margin: 0;
+        }
+        .next-previous {
+          height: 5vw;
+          width: 5vw;
+        }
+        .border-circle,
+        .border-plus {
+          width: 5vw;
+          height: 5vw;
+        }
+        .border-circle {
+          right: -2vw;
+          top: -2vw;
+        }
+        .border-plus {
+          left: -2.5vw;
+          bottom: -2.5vw;
+        }
+        .vehicle-images {
+          width: 30vw;
+          height: 45vw;
+        }
+        .testimony-images {
+          width: 30vw;
+          height: 45vw;
+        }
+      }
+      @media (max-width: 576px) {
+        .more img {
+          display: none;
+        }
+        .vehicle-images {
+          width: 35vw;
+          height: 45vw;
+        }
+        .testimony-images {
+          margin: 0;
+        }
+        .next-previous {
+          height: 5vw;
+          width: 5vw;
+        }
+        .border-circle,
+        .border-plus {
+          width: 5vw;
+          height: 5vw;
+        }
+        .border-circle {
+          right: -2vw;
+          top: -2vw;
+        }
+        .border-plus {
+          left: -2.5vw;
+          bottom: -2.5vw;
+        }
         .vehicle-images img {
           display: block;
           object-fit: cover;
-          width: 35vw;
-          height: 55vw;
           border-radius: 8px;
         }
         .vehicle-images figcaption {
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
-          max-width: 50px;
+          max-width: 60%;
+        }
+        .testimony-images {
+          width: 40vw;
+          height: 60vw;
+        }
+        .testimonies {
+          text-align: justify;
         }
       }
     </style>
   </head>
 
   <body>
-    <div class="container header">
+    <header class="container-fluid header">
       <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="index.html">
           <img
@@ -225,242 +318,255 @@
           </ul>
         </div>
       </nav>
-    </div>
-    <div class="row">
-      <div class="col-12 poster">
-        <div class="layer">
-          <div class="row">
-            <div class="col-sm-6 col-xl-4 col-12">
-              <div class="col-12 col-md-8 col-sm-6 tagline">
-                Explore And Travel
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="sub-tagline">Vehicle Finder</div>
-            </div>
-            <div class="col-12">
-              <div class="wrapper col-12 col-sm-8 col-md-8 col-xl-4">
-                <div class="row" style="color: #393939">
-                  <div class="col-sm-6 col-12">
-                    <select>
-                      <option value="Location" disabled>Location</option>
-                      <option value="Bali">Bali</option>
-                      <option value="Yogyakarta">Yogyakarta</option>
-                      <option value="Jakarta">Jakarta</option>
-                      <option value="Kalimantan">Kalimantan</option>
-                      <option value="Malang">Malang</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-6 col-12">
-                    <select>
-                      <option value="Type" disabled>Type</option>
-                      <option value="Car">Car</option>
-                      <option value="Bike">Bike</option>
-                      <option value="Motorcycle">Motorcycle</option>
-                      <option value="Sports Car">Sports Car</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-6 col-12">
-                    <select>
-                      <option value="Payment">Payment</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-6 col-12">
-                    <input type="date" name="date" id="" placeholder="now">
+    </header>
+    <main>
+      <div class="row">
+        <div class="col-12 poster">
+          <div class="layer">
+            <div class="row">
+              <div class="col-xl-6 col-12">
+                <div class="tagline-wrapper" style="min-height: 20vh">
+                  <div class="col-12 col-sm-6 tagline">Explore And Travel</div>
+                  <div class="col-12">
+                    <div class="sub-tagline">Vehicle Finder</div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-8">
-                  <a href="#explore" class="btn btn-md btn-yellow">Explore</a>
+              </div>
+              <div class="col-12">
+                <div class="wrapper col-12 col-sm-8 col-md-8 col-xl-6">
+                  <div class="row" style="color: #393939">
+                    <div class="col-sm-6 col-12">
+                      <select>
+                        <option value="Location" selected disabled>
+                          Location
+                        </option>
+                        <option value="Bali">Bali</option>
+                        <option value="Yogyakarta">Yogyakarta</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Kalimantan">Kalimantan</option>
+                        <option value="Malang">Malang</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <select>
+                        <option value="Type" selected disabled>Type</option>
+                        <option value="Car">Car</option>
+                        <option value="Bike">Bike</option>
+                        <option value="Motorcycle">Motorcycle</option>
+                        <option value="Sports Car">Sports Car</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <select>
+                        <option value="Payment">Payment</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <input type="date" name="date" id="" placeholder="now" />
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-8">
+                    <a href="#explore" class="btn btn-md btn-yellow">Explore</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      class="
-        row
-        content
-        d-flex
-        flex-row
-        align-items-center
-        justify-content-between
-      "
-      style="
-        background-image: url(./assets/icons/circle.svg);
-        background-position: center bottom;
-        background-size: 1rem 1rem;
-        background-repeat: no-repeat;
-      "
-    >
-      <div class="col-7 col-sm-9 row-header">Popular in town</div>
-      <div class="col-5 col-sm-3 text-right align-bottom">
-        <a href="#view-all" class="more">
-          View All
-          <img
-            src="./assets/icons/forward.svg"
-            width="14px"
-            height="14px"
-            alt="View All"
-            style="
-              filter: invert(70%) sepia(32%) saturate(5220%) hue-rotate(347deg)
-                brightness(102%) contrast(97%);
-            "
-          />
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
-        <div class="vehicle-content">
-          <div class="vehicle-images">
-            <a href="detail-vehicle.html">
-              <img
-                src="./assets/images/eric-muhr-ZPsJW-OLZQM-unsplash-preview.webp"
-                alt="vehicles"
-              />
-              <figcaption>
-                <span class="fig-title">Merapi </span><br />
-                <span class="fig-subtitle"> Yogyakarta </span>
-              </figcaption>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
-        <div class="vehicle-content">
-          <div class="vehicle-images">
-            <a href="detail-vehicle.html">
-              <img
-                src="./assets/images/manny-moreno-tdVPKfC_rP8-unsplash-preview.webp"
-                alt="vehicles"
-              />
-              <figcaption>
-                <span class="fig-title">Teluk Bogam </span><br />
-                <span class="fig-subtitle"> Kalimantan </span>
-              </figcaption>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
-        <div class="vehicle-content">
-          <div class="vehicle-images">
-            <a href="detail-vehicle.html">
-              <img
-                src="./assets/images/iqx-azmi-jn01MSrsUpE-unsplash-preview.webp"
-                alt="vehicles"
-              />
-              <figcaption>
-                <span class="fig-title">Bromo </span><br />
-                <span class="fig-subtitle"> Malang </span>
-              </figcaption>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
-        <div class="vehicle-content">
-          <div class="vehicle-images">
-            <a href="detail-vehicle.html">
-              <img
-                src="./assets/images/chuttersnap-AcdxiyTSR0A-unsplash-preview.webp"
-                alt="vehicles"
-              />
-              <figcaption>
-                <span class="fig-title">Malioboro </span><br />
-                <span class="fig-subtitle"> Yogyakarta </span>
-              </figcaption>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="row content"
-      style="
-        background-image: url(./assets/icons/circle.svg);
-        background-position: 2rem center;
-        background-size: 1rem 1rem;
-        background-repeat: no-repeat;
-      "
-    >
-      <div class="col-12 row-header">Testimonials</div>
-      <div class="row testimony">
-        <div class="col-12 col-sm-6">
-          <div class="col-12">
-            <i class="bi bi-star-fill checked"></i>
-            <i class="bi bi-star-fill checked"></i>
-            <i class="bi bi-star-fill checked"></i>
-            <i class="bi bi-star-fill checked"></i>
-            <i class="bi bi-star-fill"></i>
-          </div>
-          <div class="tesimonies col-12 col-sm-6">
-            ”It was the right decision to rent vehicle here, I spent less money
-            and enjoy the trip. It was an amazing experience to have a ride for
-            wildlife trip!”
-          </div>
-          <div class="col-12 col-sm-6 user">
-            <a href="profile.html" style="color: black">Edward Newgate</a>
-            <br />
-            <span style="font-size: 12px; color: #393939b4"
-              >Founder Circle</span
-            >
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 mx-auto">
-          <div class="testimony-images">
+      <div
+        class="
+          row
+          content
+          d-flex
+          flex-row
+          align-items-center
+          justify-content-between
+        "
+        style="
+          background-image: url(./assets/icons/circle.svg);
+          background-position: center bottom;
+          background-size: 2vw 2vw;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="col-8 col-sm-9 row-header">Popular in town</div>
+        <div
+          class="col-4 col-sm-3 text-right align-bottom"
+          style="text-align: right"
+        >
+          <a href="#view-all" class="more">
+            View All
             <img
-              src="./assets/images/Ek66rgtXgAAww_V.webp"
-              alt="testimony"
-              class="user-image"
+              src="./assets/icons/forward.svg"
+              width="14px"
+              height="14px"
+              alt="View All"
+              style="
+                filter: invert(70%) sepia(32%) saturate(5220%)
+                  hue-rotate(347deg) brightness(102%) contrast(97%);
+              "
             />
-            <figcaption>
-              <div>
-                <a href="#" aria-label="Previous testimony">
-                  <img
-                    src="./assets/icons/previous.svg"
-                    class="non-active"
-                    width="25px"
-                    height="25px"
-                    alt=""
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
+          <div class="vehicle-content">
+            <div class="vehicle-images">
+              <a href="detail-vehicle.html">
+                <img
+                  src="./assets/images/eric-muhr-ZPsJW-OLZQM-unsplash-preview.webp"
+                  alt="vehicles"
+                />
+                <figcaption>
+                  <span class="fig-title">Merapi </span><br />
+                  <span class="fig-subtitle"> Yogyakarta </span>
+                </figcaption>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
+          <div class="vehicle-content">
+            <div class="vehicle-images">
+              <a href="detail-vehicle.html">
+                <img
+                  src="./assets/images/manny-moreno-tdVPKfC_rP8-unsplash-preview.webp"
+                  alt="vehicles"
+                />
+                <figcaption>
+                  <span class="fig-title">Teluk Bogam </span><br />
+                  <span class="fig-subtitle"> Kalimantan </span>
+                </figcaption>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
+          <div class="vehicle-content">
+            <div class="vehicle-images">
+              <a href="detail-vehicle.html">
+                <img
+                  src="./assets/images/iqx-azmi-jn01MSrsUpE-unsplash-preview.webp"
+                  alt="vehicles"
+                />
+                <figcaption>
+                  <span class="fig-title">Bromo </span><br />
+                  <span class="fig-subtitle"> Malang </span>
+                </figcaption>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
+          <div class="vehicle-content">
+            <div class="vehicle-images">
+              <a href="detail-vehicle.html">
+                <img
+                  src="./assets/images/chuttersnap-AcdxiyTSR0A-unsplash-preview.webp"
+                  alt="vehicles"
+                />
+                <figcaption>
+                  <span class="fig-title">Malioboro </span><br />
+                  <span class="fig-subtitle"> Yogyakarta </span>
+                </figcaption>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row content"
+        style="
+          background-image: url(./assets/icons/circle.svg);
+          background-position: 2rem center;
+          background-size: 2vw 2vw;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="col-12 row-header">Testimonials</div>
+        <div class="row testimony">
+          <div class="col-12 col-sm-6">
+            <div class="col-12">
+              <i class="bi bi-star-fill checked"></i>
+              <i class="bi bi-star-fill checked"></i>
+              <i class="bi bi-star-fill checked"></i>
+              <i class="bi bi-star-fill checked"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="testimonies col-12 col-sm-10 col-md-8">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  ”It was the right decision to rent vehicle here, I spent less
+                  money and enjoy the trip. It was an amazing experience to have
+                  a ride for wildlife trip!”
+                </p>
+              </blockquote>
+            </div>
+            <div class="col-12 col-sm-6 user">
+              <a href="profile.html" style="color: black">Edward Newgate</a>
+              <br />
+              <span style="font-size: 12px; color: #393939b4"
+                >Founder Circle</span
+              >
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 mx-auto">
+            <div class="wrapper-all">
+              <div class="testimony-images">
+                <img
+                  src="./assets/images/Ek66rgtXgAAww_V.webp"
+                  alt="testimony"
+                  class="user-image"
+                />
+                <figcaption>
+                  <div class="text-center wrapper-testimony-btn">
+                    <a href="#" aria-label="Previous testimony">
+                      <img
+                        src="./assets/icons/previous.svg"
+                        class="non-active next-previous"
+                        width="25px"
+                        height="25px"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#" aria-label="Next testimony">
+                      <img
+                        src="./assets/icons/next.svg"
+                        class="active next-previous"
+                        width="25px"
+                        height="25px"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </figcaption>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 32 32"
+                  class="border-plus"
+                  fill="none"
+                >
+                  <path
+                    d="M19.8172 30.9471L19.8218 20.6474C19.8782 20.2542 20.1974 19.8988 20.6103 19.8243L30.9316 19.8358C31.3257 19.8924 31.6448 19.5369 31.7201 19.0126L31.7415 13.2636C31.7979 12.8704 31.4415 12.5517 30.9161 12.4762L20.5947 12.4647C20.2007 12.4081 19.8443 12.0893 19.7694 11.6773L19.7739 1.37761C19.8304 0.984415 19.474 0.665664 18.9485 0.590174L13.1874 0.565064C12.7933 0.508447 12.4741 0.863895 12.3988 1.38816L12.3943 11.6878C12.3379 12.081 12.0187 12.4365 11.6058 12.5109L1.28443 12.4995C0.890369 12.4428 0.571189 12.7983 0.495893 13.3226L0.474558 19.0716C0.418086 19.4648 0.774517 19.7836 1.29994 19.8591L11.6213 19.8705C12.0154 19.9271 12.3718 20.2459 12.4467 20.6579L12.4421 30.9576C12.3856 31.3508 12.7421 31.6695 13.2675 31.745L19.0287 31.7702C19.4415 31.6957 19.7607 31.3403 19.8172 30.9471Z"
+                    fill="#FDD08D"
                   />
-                </a>
-                <a href="#" aria-label="Next testimony">
-                  <img
-                    src="./assets/icons/next.svg"
-                    class="active"
-                    width="25px"
-                    height="25px"
-                    alt=""
-                  />
-                </a>
+                </svg>
+                <img
+                  src="./assets/icons/circle.svg"
+                  width="25"
+                  height="25"
+                  class="border-circle"
+                  alt="user frame"
+                />
               </div>
-            </figcaption>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 32 32"
-              class="border-plus"
-              fill="none"
-            >
-              <path
-                d="M19.8172 30.9471L19.8218 20.6474C19.8782 20.2542 20.1974 19.8988 20.6103 19.8243L30.9316 19.8358C31.3257 19.8924 31.6448 19.5369 31.7201 19.0126L31.7415 13.2636C31.7979 12.8704 31.4415 12.5517 30.9161 12.4762L20.5947 12.4647C20.2007 12.4081 19.8443 12.0893 19.7694 11.6773L19.7739 1.37761C19.8304 0.984415 19.474 0.665664 18.9485 0.590174L13.1874 0.565064C12.7933 0.508447 12.4741 0.863895 12.3988 1.38816L12.3943 11.6878C12.3379 12.081 12.0187 12.4365 11.6058 12.5109L1.28443 12.4995C0.890369 12.4428 0.571189 12.7983 0.495893 13.3226L0.474558 19.0716C0.418086 19.4648 0.774517 19.7836 1.29994 19.8591L11.6213 19.8705C12.0154 19.9271 12.3718 20.2459 12.4467 20.6579L12.4421 30.9576C12.3856 31.3508 12.7421 31.6695 13.2675 31.745L19.0287 31.7702C19.4415 31.6957 19.7607 31.3403 19.8172 30.9471Z"
-                fill="#FDD08D"
-              />
-            </svg>
-            <img
-              src="./assets/icons/circle.svg"
-              width="25"
-              height="25"
-              class="border-circle"
-              alt="user frame"
-            />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row foot">
-      <div class="col-sm-5 col-6">
+    </main>
+    <footer class="row gx-5 foot">
+      <div class="col-lg-6 col-md-3 col-sm-12 col-12">
         <img
           src="./assets/icons/logo-vehicle-rental.svg"
           alt="Icon"
@@ -468,14 +574,13 @@
           height="25px"
         />
         <br />
-        <br />
-        <p>
+        <p style="text-align: justify">
           Plan and book your perfect trip with expert advice, travel tips for
-          vehicle information from us
+          vehicle information from us.
         </p>
-        <p>©2020 Vehicle Rental Center. All rights reserved</p>
+        <p>©2020 Vehicle Rental Center. All rights reserved.</p>
       </div>
-      <div class="col-sm-2 col-6">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
         <div class="footer-title">Destinations</div>
         <ul>
           <li>Bali</li>
@@ -485,7 +590,7 @@
           <li>Malang</li>
         </ul>
       </div>
-      <div class="col-sm-2 col-6">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
         <div class="footer-title">Vehicle</div>
         <ul>
           <li>Bike</li>
@@ -495,7 +600,7 @@
           <li>FAQs</li>
         </ul>
       </div>
-      <div class="col-sm-3 col-6">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
         <div class="footer-title">Interest</div>
         <ul>
           <li>Adventure Travel</li>
@@ -505,55 +610,54 @@
           <li>Culinary Trip</li>
         </ul>
       </div>
-    </div>
-    <div class="row footer-info">
-      <div class="wrapper text-center col-11 mx-auto">
-        <div class="col-12 col-sm-6 col-md-4 text-center mx-auto">
-          <div class="col-12 social-icons">
-            <a href="#">
-              <img
-                src="./assets/icons/twitter.svg"
-                alt="twitter"
-                width="20px"
-                height="20px"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="./assets/icons/facebook.svg"
-                alt="facebook"
-                height="20px"
-                width="20px"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="./assets/icons/instagram.svg"
-                alt="instagram"
-                width="20px"
-                height="20px"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="./assets/icons/linkedIn.svg"
-                alt="linkedin"
-                width="20px"
-                height="20px"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="./assets/icons/youtube.svg"
-                alt="youtube"
-                width="20px"
-                height="20px"
-              />
-            </a>
+      <div class="row footer-info">
+        <div class="wrapper text-center col-12 mx-auto">
+            <div class="col-12 social-icons">
+              <a href="#">
+                <img
+                  src="./assets/icons/twitter.svg"
+                  alt="twitter"
+                  width="20px"
+                  height="20px"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/icons/facebook.svg"
+                  alt="facebook"
+                  height="20px"
+                  width="20px"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/icons/instagram.svg"
+                  alt="instagram"
+                  width="20px"
+                  height="20px"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/icons/linkedIn.svg"
+                  alt="linkedin"
+                  width="20px"
+                  height="20px"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/icons/youtube.svg"
+                  alt="youtube"
+                  width="20px"
+                  height="20px"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
