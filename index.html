@@ -65,7 +65,7 @@
       }
       .vehicle-card {
         border: 0px solid tomato;
-        margin-bottom: 10px;
+        margin-bottom: 3vh;
       }
       .vehicle-images {
         position: relative;
@@ -182,6 +182,11 @@
       .foot {
         font-size: 1rem;
       }
+      @media (min-width: 1400px) {
+        .fig-title, .fig-subtitle{
+          font-size: 20px;
+        }
+      }
       @media (max-width: 767px) {
         .testimony-images {
           margin: 0;
@@ -213,6 +218,12 @@
         }
       }
       @media (max-width: 576px) {
+        .poster {
+        min-height: 87vh;
+        }
+        .form{
+          padding-top: 0vh !important;
+        }
         .more img {
           display: none;
         }
@@ -224,8 +235,8 @@
           margin: 0;
         }
         .next-previous {
-          height: 5vw;
-          width: 5vw;
+          height: 8vw;
+          width: 9vw;
         }
         .border-circle,
         .border-plus {
@@ -332,7 +343,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12">
+              <div class="col-12 form" style="min-height: 25vh; padding-top: 10vh;">
                 <div class="wrapper col-12 col-sm-8 col-md-8 col-xl-6">
                   <div class="row" style="color: #393939">
                     <div class="col-sm-6 col-12">
@@ -390,7 +401,7 @@
           background-repeat: no-repeat;
         "
       >
-        <div class="col-8 col-sm-9 row-header">Popular in town</div>
+        <div class="col-8 col-sm-9 row-header">Popular in Town</div>
         <div
           class="col-4 col-sm-3 text-right align-bottom"
           style="text-align: right"
@@ -425,7 +436,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
+        <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card card-right">
           <div class="vehicle-content">
             <div class="vehicle-images">
               <a href="detail-vehicle.html">
@@ -457,8 +468,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-6 text-center vehicle-card">
-          <div class="vehicle-content">
+        <div class="col-md-3 col-sm-6 col-6 vehicle-card card-right">
+          <div class="vehicle-content text-right">
             <div class="vehicle-images">
               <a href="detail-vehicle.html">
                 <img
@@ -565,7 +576,7 @@
         </div>
       </div>
     </main>
-    <footer class="row gx-5 foot">
+    <footer class="row foot">
       <div class="col-lg-6 col-md-3 col-sm-12 col-12">
         <img
           src="./assets/icons/logo-vehicle-rental.svg"
@@ -574,11 +585,12 @@
           height="25px"
         />
         <br />
-        <p style="text-align: justify">
+        <br />
+<p style="text-align: justify">
           Plan and book your perfect trip with expert advice, travel tips for
           vehicle information from us.
         </p>
-        <p>©2020 Vehicle Rental Center. All rights reserved.</p>
+        <p>&copy;2020 Vehicle Rental Center. All rights reserved.</p>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 col-6">
         <div class="footer-title">Destinations</div>
@@ -600,7 +612,7 @@
           <li>FAQs</li>
         </ul>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="margin-right:0">
         <div class="footer-title">Interest</div>
         <ul>
           <li>Adventure Travel</li>
@@ -610,7 +622,7 @@
           <li>Culinary Trip</li>
         </ul>
       </div>
-      <div class="row footer-info">
+      <div class="footer-info">
         <div class="wrapper text-center col-12 mx-auto">
             <div class="col-12 social-icons">
               <a href="#">

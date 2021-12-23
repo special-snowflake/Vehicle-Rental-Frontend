@@ -167,6 +167,7 @@ a:hover {
   background-color: #f9f9fb;
   font-size: 14px;
   padding: 5%;
+  padding-bottom: 20px;
   padding-top: 3vh;
 }
 .foot p {
@@ -195,6 +196,8 @@ a:hover {
 .footer-info .wrapper {
   padding-top: 2vh;
   border-top: 1px solid #c4c4c4;
+  width: 100%;
+  margin: auto;
 }
 .social-icons img {
   margin-right: 8px;
