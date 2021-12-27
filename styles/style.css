@@ -19,7 +19,7 @@ html, body {
   background-image: url('../assets/images/iqx-azmi-jn01MSrsUpE-unsplash-c.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -20vh;
+  background-position: center center;
 }
 .content-first,
 .content-second {
@@ -277,7 +277,7 @@ ul li a {
   }
   .left .wrapper {
     max-width: 80vw !important;
-    margin: auto;
+    margin-top: 10% !important;
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -345,5 +345,8 @@ ul li a {
   }
   .content-second{
     font-size: 20px;
+  }
+  .forget-password{
+    font-size: 18px;
   }
 }

@@ -39,11 +39,12 @@
         color: white;
         font-family: 'Playfair Display', serif;
         font-weight: bolder;
-        font-size: 7vh;
+        font-size: 35px;
         margin-bottom: 2vh;
         line-height: 110%;
       }
       .sub-tagline {
+        font-size: 20px;
         color: white;
         font-weight: bolder;
       }
@@ -183,11 +184,28 @@
         font-size: 1rem;
       }
       @media (min-width: 1400px) {
+        .tagline{
+          font-size: 75px !important;
+        }
+        .sub-tagline{
+          font-size: 30px !important;
+        }
         .fig-title, .fig-subtitle{
           font-size: 20px;
         }
       }
+      @media (min-width:768px) {
+        .tagline{
+          font-size: 60px;
+        }
+        .sub-tagline{
+          font-size: 25px;
+        }
+      }
       @media (max-width: 767px) {
+        .tagline{
+          font-size: 45px;
+        }
         .testimony-images {
           margin: 0;
         }
@@ -224,6 +242,7 @@
         .form{
           padding-top: 0vh !important;
         }
+        .sub-tagline{}
         .more img {
           display: none;
         }
@@ -337,7 +356,7 @@
             <div class="row">
               <div class="col-xl-6 col-12">
                 <div class="tagline-wrapper" style="min-height: 20vh">
-                  <div class="col-12 col-sm-6 tagline">Explore And Travel</div>
+                  <div class="col-12 col-sm-6 col-md-12 tagline">Explore And Travel</div>
                   <div class="col-12">
                     <div class="sub-tagline">Vehicle Finder</div>
                   </div>

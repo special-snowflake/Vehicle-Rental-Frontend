@@ -15,7 +15,7 @@ body {
   overflow-x: hidden !important;
 }
 .header {
-  padding-top: 3vh;
+  padding-top: 2vh;
   padding-left: 5%;
   padding-right: 5%;
   min-height: 13vh;
@@ -316,6 +316,9 @@ a:hover {
     width: 100%;
     font-size: 20px;
     margin-bottom: 5vh;
+  }
+  .header {
+    padding-top: 3vh;
   }
   .header ul li {
     font-size: 18px;
