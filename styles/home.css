@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 *,
@@ -164,16 +164,19 @@ a:hover {
 }
 
 .foot {
+  font-family: 'Mulish', sans-serif;
   background-color: #f9f9fb;
-  font-size: 14px;
+  font-size: calc(14px + 0.3vw);
   padding: 5%;
   padding-bottom: 20px;
   padding-top: 3vh;
 }
 .foot p {
+  font-family: 'Mulish', sans-serif;
   max-width: 500px;
 }
 .footer-title {
+  font-family: 'Mulish', sans-serif;
   font-weight: bolder;
   margin-bottom: 10px;
 }
@@ -184,6 +187,7 @@ a:hover {
   padding-left: 0;
 }
 .foot ul li {
+  font-family: 'Mulish', sans-serif;
   list-style-type: none;
   margin-bottom: 3px;
 }

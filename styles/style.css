@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 *,
 *::before,
 *::after {
@@ -151,8 +152,10 @@ ul li {
 ul li a {
   color: #848484;
   text-decoration: none;
+  font-family: 'Mulish', sans-serif;
 }
 .content-second {
+  font-family: 'Mulish', sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -175,7 +178,11 @@ ul li a {
 .interest {
   flex: 1;
 }
+.content-second h4{
+  font-family: 'Mulish', sans-serif;
+}
 .info {
+  font-family: 'Mulish', sans-serif;
   flex: 1.5;
 }
 .info p {
